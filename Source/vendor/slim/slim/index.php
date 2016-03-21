@@ -36,6 +36,13 @@ $app->get('/character/:guidorname', function($guidorname) use($app) {
  $cc->GetCharacter($guidorname);
 });
 
+$app->post('/leaderboard/', function() use($app){
+    $hsObject = $app->request()->post();
+     $lc = new LeaderboardController();
+     $lc->AddHighScore($hsObject);
+});
+
+
 // Run the application
 $app->run();
 ?>
