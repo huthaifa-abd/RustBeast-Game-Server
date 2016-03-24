@@ -48,7 +48,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 		)
 ));
 
-$app['asset_path'] = 'http://127.0.0.1/projects/RustBeast-Game-Server/Source/admin-panel/web/resources';
+$app['asset_path'] = 'http://127.0.0.1/projects/RustBeast-Game-Server/admin-panel/web/resources';
 $app['debug'] = true;
 	// array of REGEX column name to display for foreigner key insted of ID
 	// default used :'name','title','e?mail','username'
