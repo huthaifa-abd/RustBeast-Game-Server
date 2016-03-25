@@ -1,6 +1,6 @@
 <?php
 //Load Required Libraries
-require 'vendor\slim\slim\Slim\Slim.php';
+require (dirname(__FILE__).'/vendor/slim/slim/Slim/Slim.php');
 \Slim\Slim::registerAutoloader();
 $app = new \Slim\Slim();
 
