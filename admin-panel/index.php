@@ -15,6 +15,6 @@ if(!isUserLoggedIn())
 	
  } else { 
 
-header("Location: userpage.php"); 	 
+header("Location: ./web/index.php"); 	 
 
 } ?>
